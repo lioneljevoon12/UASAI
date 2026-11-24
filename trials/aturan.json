@@ -1,0 +1,28 @@
+{
+  "_catatan": "Semua angka adalah CONTOH. Ganti dengan hasil survei/jurnal.",
+  "B": 30000,
+  "kategori": ["primer", "sekunder", "tersier"],
+  "input": {
+    "jatah": {
+      "sedikit": [null, null, 1, 1.5],
+      "sedang": [1, 1.5, 2, 2.5],
+      "banyak": [2, 2.5, null, null]
+    },
+    "hari": {
+      "dekat": [null, null, 5, 10],
+      "sedang": [5, 10, 15, 20],
+      "jauh": [15, 20, null, null]
+    }
+  },
+  "aturan": [
+    {"jika": {"jatah": "sedikit", "hari": "dekat"}, "maka": [80, 15, 5]},
+    {"jika": {"jatah": "sedikit", "hari": "sedang"}, "maka": [85, 12, 3]},
+    {"jika": {"jatah": "sedikit", "hari": "jauh"}, "maka": [90, 10, 0]},
+    {"jika": {"jatah": "sedang", "hari": "dekat"}, "maka": [60, 25, 15]},
+    {"jika": {"jatah": "sedang", "hari": "sedang"}, "maka": [65, 23, 12]},
+    {"jika": {"jatah": "sedang", "hari": "jauh"}, "maka": [70, 22, 8]},
+    {"jika": {"jatah": "banyak", "hari": "dekat"}, "maka": [45, 30, 25]},
+    {"jika": {"jatah": "banyak", "hari": "sedang"}, "maka": [50, 30, 20]},
+    {"jika": {"jatah": "banyak", "hari": "jauh"}, "maka": [55, 28, 17]}
+  ]
+}
